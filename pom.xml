@@ -43,11 +43,11 @@
   </dependencies>
 
   <repositories>
-    <!-- <repository>
+    <repository>
       <id>nexus-releases</id>
       <name>maven-releases</name>
       <url>http://192.168.1.124:8081/repository/maven-releases/</url>
-    </repository> -->
+    </repository>
     <repository>
       <id>nexus-snapshots</id>
       <name>maven-snapshots</name>
