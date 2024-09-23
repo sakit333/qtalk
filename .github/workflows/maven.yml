@@ -44,10 +44,13 @@ jobs:
 
     - name: check with ls
       run: ls -al
-      
-    - name: Upload JAR file
-      uses: actions/upload-artifact@v3
-      with:
-        name: built-jar
-        path: target/*.jar
+
+    - name: checking
+      run: grep -r "*.jar"
+
+    # - name: Upload JAR file
+    #   uses: actions/upload-artifact@v3
+    #   with:
+    #     name: built-jar
+    #     path: target/*.jar
 
