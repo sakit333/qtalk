@@ -38,7 +38,13 @@ jobs:
 
     - name: package with Maven
       run: mvn -B package --file pom.xml
+    
+    - name: check for pwd
+      run: pwd
 
+    - name: check with ls
+      run: ls -al
+      
     - name: Upload JAR file
       uses: actions/upload-artifact@v3
       with:
