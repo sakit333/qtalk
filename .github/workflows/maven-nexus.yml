@@ -37,8 +37,9 @@ jobs:
       run: mvn -B package
 
     - name: Deploy to Nexus
-      run: mvn -B deploy --settings .github/maven-settings.xml
+      run: mvn -B deploy --settings .github/maven-settings.xml -X
       env:
-        NEXUS_USERNAME: admin
-        NEXUS_PASSWORD: admin
+        NEXUS_USERNAME: ${{ secrets.NEXUS_USERNAME }}
+        NEXUS_PASSWORD: ${{ secrets.NEXUS_PASSWORD }}
+
 
