@@ -37,5 +37,5 @@ jobs:
       run: mvn -B test --file pom.xml
 
     - name: package with Maven
-      run: mvn -B package --file
+      run: mvn -B package --file pom.xml
 
