@@ -46,7 +46,7 @@ jobs:
       run: ls -al
 
     - name: checking
-      run: grep -r "*.jar"
+      run: grep -r "target/*.jar"
 
     # - name: Upload JAR file
     #   uses: actions/upload-artifact@v3
