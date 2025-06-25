@@ -20,5 +20,6 @@
   </servers>
 </settings>
 ```
+-if its need in jenkins(ci/cd)
 - If it needs in jenkins(CI/CD) 
 - create global maven settings.xml file in jenkins
